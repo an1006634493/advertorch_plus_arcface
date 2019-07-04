@@ -34,3 +34,7 @@ function。
 UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb8 in position 3832: invalid start byte
 7、若a是tensor，查找a中最大元素不能用a.index(max(a))，因为index函数只对list有用，所以要用：
 list(a).index(max(a))
+
+小技巧：
+1、torch.min：返回最小值与index。
+2、x.transpose：交换维度，高维转置。
